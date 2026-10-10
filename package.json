@@ -1,0 +1,17 @@
+{
+  "name": "co-vua-stockfish",
+  "version": "2.0.0",
+  "description": "Cờ vua trên trình duyệt: đấu Stockfish, chơi với bạn và Custom Studio tự tạo bàn cờ, quân cờ, luật đi.",
+  "type": "module",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "node tests/run-tests.mjs && node tests/variant-tests.mjs && node tests/e2e.mjs",
+    "test:rules": "node tests/variant-tests.mjs",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.50.0"
+  }
+}

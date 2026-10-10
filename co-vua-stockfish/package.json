@@ -1,0 +1,18 @@
+{
+  "name": "co-vua-stockfish",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "node tests/run-tests.mjs && node tests/ui-smoke.mjs"
+  },
+  "dependencies": {
+    "chess.js": "^1.4.0",
+    "stockfish": "^19.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "jsdom": "^30.1.2"
+  }
+}
